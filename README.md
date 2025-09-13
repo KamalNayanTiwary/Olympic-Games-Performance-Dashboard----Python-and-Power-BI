@@ -332,12 +332,10 @@ Based on insights from the dashboard, several **strategic recommendations** were
 
 ---
 
-### 🚀 Future Enhancements
+## 👨‍💻 Author & Contact  
 
-The project can be extended with advanced features such as:  
-- **Predictive medal forecasting** using machine learning models.  
-- Integration of **real-time API refresh** for live Olympic updates.  
-- Expansion of dataset to cover **historical Olympic Games (2000–2024)** for trend analysis.  
-- Development of **role-based dashboards** tailored for Coaches, Committees, and Sponsors.  
+**Kamal Nayan Tiwary**  
+**Data Analyst**
 
----
+📧 **kamalnayantiwary73@gmail.com**  
+🔗 [LinkedIn](https://www.linkedin.com/in/kamal-nayan-tiwary-2022-2026-/)  
