@@ -120,7 +120,7 @@ Install required packages:
 ```bash
 pip install pandas numpy kaggle
 ```
-###📥 Download & unzip dataset
+**📥 Download & unzip dataset**
 ```import kaggle, pandas as pd, os
 
 os.environ['KAGGLE_CONFIG_DIR'] = 'C:/Users/faies/.kaggle'
