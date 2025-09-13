@@ -138,6 +138,7 @@ for file in csv_files:
     df = pd.read_csv(os.path.join(download_path, file))
     dataFrames[file.split('.')[0]] = df
 ➡️ Ensures latest Kaggle data is always synced with Power BI
+```
 
 🔹 Step 3: Power BI Integration
 
