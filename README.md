@@ -165,4 +165,6 @@ total_athletes = df['athlete_id'].nunique()
 total_rows = len(df)
 print(total_athletes, total_rows)
 ```
-
+**💾 Export**
+```df.to_csv(os.path.join(download_path,'athletes_clean.csv'), index=False)
+```
