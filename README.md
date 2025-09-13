@@ -55,7 +55,7 @@ The **Country Performance Dashboard** acts as the **executive snapshot** of the 
 
 ---
 
-### 2️⃣ ATHLETE ANALYSIS Dashboard – **Demographics & Age Trends**  
+### 2️⃣ ATHLETES ANALYSIS Dashboard – **Demographics & Age Trends**  
 ![ATHLETE Dashboard](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/Athletes%20Dashboard.png)  
 
 The **Athlete Dashboard** focuses on the **demographics of athletes** — gender, age, and country participation. It is designed to help sports scientists, coaches, and committees **understand athlete characteristics**.  
@@ -120,7 +120,7 @@ This **Olympic Games Performance Dashboard** was built to:
 
 📊 By consolidating these insights into **interactive Power BI dashboards**, analysts, committees, and fans can explore the Olympics data more effectively and make data-driven observations.  
 
-➡️ **[Read Full Report Here](#)** 
+➡️ **[Read Full Report Here](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/OLYMPIC%20GAMES%20PERFORMANCE%20Report.pdf)** 
 ---
 
 ## 📌 Project Background  
