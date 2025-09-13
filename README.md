@@ -24,7 +24,7 @@ The project provides **actionable insights** to sports analysts, committees, and
 - **Athlete Analysis Dashboard** – Gender distribution, age distribution, sports-wise participation, filters for Sport and Year  
 - **Medal Insights Dashboard** – Medal distribution by type (Gold, Silver, Bronze), top-performing athletes, country contribution, conditional formatting for trends  
 
-🔗 You can explore it **Live** here: [View Dashboard](#)
+🔗 You can explore it **Live** here: [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjc5MWM4MDQtY2EwYy00MmFmLTg1MjEtOGMyOWY3YTY0NjE2IiwidCI6ImNhZDFhYWU2LTc3MjEtNGE2Yy05ZWM3LWY1MWQ4YTJkYjY5NiJ9)
 
 ---
 
