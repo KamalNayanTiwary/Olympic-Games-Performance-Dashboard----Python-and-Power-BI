@@ -18,7 +18,7 @@ The project provides **actionable insights** to sports analysts, committees, and
 
 --- 
 
-## 📊 Live Dashboard  
+### 📊 Live Dashboard  
 
 - **Country Performance Dashboard** – Total Athletes, Total Medals, Total Gold Medals, country-wise medal tally, year-wise trends, top 10 countries comparison  
 - **Athlete Analysis Dashboard** – Gender distribution, age distribution, sports-wise participation, filters for Sport and Year  
