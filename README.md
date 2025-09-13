@@ -19,8 +19,15 @@ The project provides **actionable insights** to sports analysts, committees, and
 ---
 
 ## 📊 Dashboard Overview  
-
 I designed **3 Dashboards** for a complete analysis:  
+
+## 📊 Live Dashboard  
+
+- **Country Performance Dashboard** – Total Athletes, Total Medals, Total Gold Medals, country-wise medal tally, year-wise trends, top 10 countries comparison  
+- **Athlete Analysis Dashboard** – Gender distribution, age distribution, sports-wise participation, filters for Sport and Year  
+- **Medal Insights Dashboard** – Medal distribution by type (Gold, Silver, Bronze), top-performing athletes, country contribution, conditional formatting for trends  
+
+🔗 You can explore it **Live** here: [View Dashboard](#)
 
 ---
 
@@ -89,8 +96,31 @@ The **Geographical Dashboard** zooms into the **spatial distribution of Olympic 
 📌 **Sample Insights:**  
 - **USA is far ahead globally**, followed by China & France  
 - Europe shows **high participation with broad medal spread**  
-- Asia’s rise visible with **China, Japan, Korea performing well**  
+- Asia’s rise visible with **China, Japan, Korea performing well**
 
+---
+## 📄 Olympic Games Performance Report  
+
+The Olympic Games are a global sporting event that showcases the **talent, dedication, and achievements of athletes worldwide**. To make sense of this vast amount of data, it is important to **track, analyze, and visualize performance** to gain actionable insights into countries, athletes, and medal trends.  
+
+This **Olympic Games Performance Dashboard** was built to:  
+- Monitor overall **Athlete Participation, Total Medals, and Gold Medals**  
+- Track **Country-wise performance** across different Olympic years  
+- Analyze **Gender Distribution and Age Profiles** of athletes  
+- Compare **Top-performing Countries and Athletes**  
+- Segment insights by **Sport, Event, and Year**  
+
+### 🔑 Why Analyze Olympic Data?  
+- **Performance Analysis** → Understand which countries and athletes are excelling  
+- **Trend Detection** → Identify performance trends over multiple Olympic events  
+- **Gender Insights** → Assess gender representation and parity in sports  
+- **Age & Participation Insights** → Evaluate athlete age distribution and sport-wise involvement  
+- **Strategic Planning** → Help national committees and coaches plan training programs  
+- **Fan Engagement** → Provide sports enthusiasts with clear, interactive insights  
+
+📊 By consolidating these insights into **interactive Power BI dashboards**, analysts, committees, and fans can explore the Olympics data more effectively and make data-driven observations.  
+
+➡️ **[Read Full Report Here](#)** 
 ---
 
 ## 📌 Project Background  
