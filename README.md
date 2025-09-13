@@ -6,7 +6,7 @@ To build a **comprehensive Olympic Games Analysis Dashboard**, powered by **Pyth
 - Athlete demographics & participation statistics  
 - Medal distribution by country, gender, and medal type  
 - Performance benchmarking of top-performing nations  
-- Gender parity in Olympic achievements  
+- Gender parity in Olympic achievements   
 - Age distribution analysis of athletes  
 
 The project provides **actionable insights** to sports analysts, committees, and stakeholders, enabling them to:  
