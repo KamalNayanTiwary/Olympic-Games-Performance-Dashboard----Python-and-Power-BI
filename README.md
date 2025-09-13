@@ -120,7 +120,7 @@ This **Olympic Games Performance Dashboard** was built to:
 
 📊 By consolidating these insights into **interactive Power BI dashboards**, analysts, committees, and fans can explore the Olympics data more effectively and make data-driven observations.  
 
-➡️ **[Read Full Report Here](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/OLYMPIC%20GAMES%20PERFORMANCE%20Report.pdf)** 
+➡️ **[Read Full Report Here](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/OLYMPIC%20GAMES%20PERFORMANCE%20REPORT.pdf)** 
 ---
 
 ## 📌 Project Background  
