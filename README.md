@@ -241,114 +241,103 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 ```
 ---
 
-### 🔹Step 5 —  Dashboard Development (Design & UX)
+### 🔹Step 5 — Dashboard Development (Design & UX)  
+🎯 **Goal:** Create three professional and interactive pages with consistent design, layout, and color theme.
 
-🎯 **Goal:** Create 3 professional pages with consistent design and clear storytelling.  
+## Page 1 — Country Performance
+- **KPI Cards:** Total Athletes, Total Medals, Total Gold Medals  
+- **Visualizations:** Country-wise medal tally, year-wise performance trend, top 10 countries comparison  
+- **UX Focus:** Allow users to easily see which country performed best and how trends changed over time
 
----
+## Page 2 — Athlete Analysis
+- **Visualizations:** Gender distribution, age distribution, sports-wise participation  
+- **Insights:** Analyze male vs. female athlete participation and success across age groups  
+- **UX Focus:** Interactive filters like “Sport” or “Year” for customized analysis
 
-**📍 Page 1 — Country Performance**
-- 📊 **KPI Cards:** Athletes, Medals, Gold / Silver / Bronze  
-- 🗺 **Map:** Medal density by country  
-- 📈 **Bar Chart:** Top 10 countries by medals  
-- ⚧ **Gender Split**  
-
-**📍 Page 2 — Athlete Analysis**
-- 📊 **Histogram:** Age distribution (peak 21–30)  
-- 🍩 **Donut Chart:** Gender distribution  
-- 📋 **Table:** Top athletes by medals  
-
-**📍 Page 3 — Geographical Overview**
-- 🗺 **Map:** Highlighting USA dominance  
-- 🌍 **Regional medal comparisons**  
-- 🎛 **Slicers:** Year, Gender, Sport  
-
- **🎛 Interactivity**
-- Slicers, bookmarks, tooltips  
-- Drill-through for athlete-level detail  
-
-**🎨 Colors**
-- Gold 🥇, Silver 🥈, Bronze 🥉  
-- Neutral, consistent background  
+## Page 3 — Medal Insights
+- **Visualizations:** Medal distribution by type (Gold, Silver, Bronze), top-performing athletes, country contribution  
+- **Insights:** Compare medal trends and top achievers  
+- **UX Focus:** Maintain visual hierarchy, ensuring charts and KPIs are easy to read
 
 ---
 
-### 🔹Step 6 —  Validation & QA
+### 🔹Step 6 — Data Modeling & Relationships  
+🎯 **Goal:** Establish logical relationships between datasets in Power BI  
 
-✔ **Check medal totals** = match with official IOC data  
-✔ **Validate gender distribution** across events  
-✔ **Deduplicate** athlete-event rows  
-✔ **Peer review** → 5–10 random athlete records  
-
----
-
-### 🔹Step 7 —  Performance Optimization
-
-⚡ **Best Practices**  
-- Use **Star Schema** for data modeling  
-- Remove **unused columns**  
-- Use **Import mode** for faster performance  
-- Replace calculated columns with **DAX measures**  
-- Configure **Incremental Refresh** if dataset grows  
+- Clean and transform data before creating relationships using **primary and foreign keys**  
+- Implement **star schema design**: fact table for medals & dimension tables for country, athlete, and event  
+- Validate relationships to ensure visuals are accurate and responsive
 
 ---
 
-### 🔹Step 8 —  Deployment & Sharing
+### 🔹Step 7 — DAX Calculations & KPIs  
+🎯 **Goal:** Create custom measures and KPIs for deeper insights  
 
-🚀 **Process**  
-- Publish `.pbix` → Power BI Service  
-- Configure **credentials & refresh schedule**  
-- Use **On-premises Gateway** if pulling local data  
-- Apply **Row-Level Security (RLS)** for restricted views  
-- ✅ Publish to Web → *only for public, non-sensitive data*  
+**Examples of DAX Measures:**  
+- `Total Medals = SUM(Medals[Count])`  
+- `Gold Medal Percentage = DIVIDE(SUM(Medals[Gold]), SUM(Medals[Total]))`  
+- `Average Age = AVERAGE(Athletes[Age])`  
+
+- Implement advanced calculations like Year-over-Year medal growth and gender parity index  
+- Highlight KPIs using cards and conditional formatting for better readability
 
 ---
 
-### 🔹Step 9 —  Deliverables & Documentation
+### 🔹Step 8 — Interactivity & Filters  
+🎯 **Goal:** Make the dashboard interactive and user-friendly  
 
-📦 **Deliverables**  
-- `Olympic.pbix` → Final Power BI file  
-- `olympics_kaggle_api.py` → Python data acquisition script  
-- `data/athletes_clean.csv` → Cleaned dataset  
-- `reports/Olympic_Report.pdf` → Detailed analysis report  
-- `screenshots/` → Dashboard images  
-- `README.md` → Documentation (this file)  
+- Add **Slicers** for Year, Country, Sport, and Gender  
+- Enable **Drill-through** and **Tooltips** for detailed insights  
+- Use **conditional formatting** and dynamic visuals for easy trend detection  
+- Ensure responsive design for different screen sizes
+
+---
+
+### 🔹Step 9 — Testing & Optimization  
+🎯 **Goal:** Ensure the dashboard is accurate, responsive, and high-performing  
+
+- Verify data refresh and calculations for correctness  
+- Optimize performance by reducing unnecessary columns and using aggregation tables  
+- Conduct cross-browser and device testing  
+- Final review for visual alignment, color consistency, and readability
 
 ---
 
 ## 📊 Business Problems Solved
 
-- 🥇 Identified **dominant countries & medal trends**  
-- ⚧ Measured **gender parity in Olympic achievements**  
-- 👶 Provided **athlete age-group insights**  
-- 🌍 Produced **geographic medal distribution**  
+This dashboard provided **clear answers to critical business questions**:  
+- Which countries dominate Olympic performance and how trends have evolved.  
+- The state of **gender parity** in global sports achievements.  
+- Age-group insights showing when athletes typically reach peak performance.  
+- Regional disparities in medal distribution, useful for committees to **redirect focus and resources**.  
 
 ---
 
 ## 📌 Key Recommendations
 
-- Invest more in **women’s sports** 🏃‍♀️  
-- Focus on **21–30 years age group** athletes  
-- Use **veteran athletes strategically** in endurance events  
-- Benchmark against **USA training systems & funding models**  
+Based on insights from the dashboard, several **strategic recommendations** were made:  
+- Invest more in **women’s sports programs**, given the increasing success of female athletes.  
+- Prioritize athlete development in the **21–30 age group**, as this is the performance peak.  
+- Leverage **veteran athletes** in endurance and technical events for experience-driven results.  
+- Benchmark and learn from **USA’s sports training systems and funding models** to improve long-term performance.  
 
 ---
 
 ## 🛠 Tech Stack
 
-- 🐍 **Python (Pandas, Kaggle API)** → Data acquisition & cleaning  
-- 📊 **Power BI** → Visualization & dashboards  
-- ➗ **DAX** → Measures & KPIs  
-- 📑 **Excel** → Validation checks  
+- 🐍 **Python (Pandas, Kaggle API)** → Data extraction and preprocessing  
+- 📊 **Power BI** → Data visualization and interactive dashboarding  
+- ➗ **DAX** → Calculated measures and KPIs  
+- 📑 **Excel** → Cross-validation of data and manual checks  
 
 ---
 
 ## 🚀 Future Enhancements
 
-- 🔮 Predictive **medal forecasting** using ML models  
-- ⚡ Real-time **API refresh** into Power BI Service  
-- 📈 Expand dataset to include **historical Olympics (2000–2024)**  
-- 🎯 Role-based dashboards for **Coach / Committee / Sponsor**  
+The project can be extended with advanced features such as:  
+- **Predictive medal forecasting** using machine learning models.  
+- Integration of **real-time API refresh** for live Olympic updates.  
+- Expansion of dataset to cover **historical Olympic Games (2000–2024)** for trend analysis.  
+- Development of **role-based dashboards** tailored for Coaches, Committees, and Sponsors.  
 
 ---
-
