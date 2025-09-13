@@ -253,21 +253,15 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 - 📈 **Bar Chart:** Top 10 countries by medals  
 - ⚧ **Gender Split**  
 
----
-
 **📍 Page 2 — Athlete Analysis**
 - 📊 **Histogram:** Age distribution (peak 21–30)  
 - 🍩 **Donut Chart:** Gender distribution  
 - 📋 **Table:** Top athletes by medals  
 
----
-
 **📍 Page 3 — Geographical Overview**
 - 🗺 **Map:** Highlighting USA dominance  
 - 🌍 **Regional medal comparisons**  
 - 🎛 **Slicers:** Year, Gender, Sport  
-
----
 
  **🎛 Interactivity**
 - Slicers, bookmarks, tooltips  
