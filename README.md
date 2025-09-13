@@ -16,10 +16,7 @@ The project provides **actionable insights** to sports analysts, committees, and
 ✔ Monitor athlete demographics & participation trends  
 ✔ Support data-driven sports development strategies  
 
----
-
-## 📊 Dashboard Overview  
-I designed **3 Dashboards** for a complete analysis:  
+--- 
 
 ## 📊 Live Dashboard  
 
@@ -30,6 +27,9 @@ I designed **3 Dashboards** for a complete analysis:
 🔗 You can explore it **Live** here: [View Dashboard](#)
 
 ---
+
+## 📊 Dashboard Overview  
+I designed **3 Dashboards** for a complete analysis: 
 
 ### 1️⃣ COUNTRY PERFORMANCE Dashboard – **Medals & Global Comparison**  
 ![COUNTRY Dashboard](screenshots/Screenshot1.png)  
