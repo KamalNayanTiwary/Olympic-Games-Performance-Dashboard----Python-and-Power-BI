@@ -244,17 +244,17 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 ### 🔹Step 5 — Dashboard Development (Design & UX)  
 🎯 **Goal:** Create three professional and interactive pages with consistent design, layout, and color theme.
 
-## Page 1 — Country Performance
+**Page 1 — Country Performance**
 - **KPI Cards:** Total Athletes, Total Medals, Total Gold Medals  
 - **Visualizations:** Country-wise medal tally, year-wise performance trend, top 10 countries comparison  
 - **UX Focus:** Allow users to easily see which country performed best and how trends changed over time
 
-## Page 2 — Athlete Analysis
+**Page 2 — Athlete Analysis**
 - **Visualizations:** Gender distribution, age distribution, sports-wise participation  
 - **Insights:** Analyze male vs. female athlete participation and success across age groups  
 - **UX Focus:** Interactive filters like “Sport” or “Year” for customized analysis
 
-## Page 3 — Medal Insights
+**Page 3 — Medal Insights**
 - **Visualizations:** Medal distribution by type (Gold, Silver, Bronze), top-performing athletes, country contribution  
 - **Insights:** Compare medal trends and top achievers  
 - **UX Focus:** Maintain visual hierarchy, ensuring charts and KPIs are easy to read
@@ -303,7 +303,7 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 
 ---
 
-## 📊 Business Problems Solved
+### 📊 Business Problems Solved
 
 This dashboard provided **clear answers to critical business questions**:  
 - Which countries dominate Olympic performance and how trends have evolved.  
@@ -313,7 +313,7 @@ This dashboard provided **clear answers to critical business questions**:
 
 ---
 
-## 📌 Key Recommendations
+### 📌 Key Recommendations
 
 Based on insights from the dashboard, several **strategic recommendations** were made:  
 - Invest more in **women’s sports programs**, given the increasing success of female athletes.  
@@ -323,7 +323,7 @@ Based on insights from the dashboard, several **strategic recommendations** were
 
 ---
 
-## 🛠 Tech Stack
+### 🛠 Tech Stack
 
 - 🐍 **Python (Pandas, Kaggle API)** → Data extraction and preprocessing  
 - 📊 **Power BI** → Data visualization and interactive dashboarding  
@@ -332,7 +332,7 @@ Based on insights from the dashboard, several **strategic recommendations** were
 
 ---
 
-## 🚀 Future Enhancements
+### 🚀 Future Enhancements
 
 The project can be extended with advanced features such as:  
 - **Predictive medal forecasting** using machine learning models.  
