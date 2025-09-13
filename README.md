@@ -201,7 +201,7 @@ df.to_csv(os.path.join(download_path,'athletes_clean.csv'), index=False)
 ```
 ---
 
-### 🔹Step 3 — Power BI Integration (Load & Connect)
+## 🔹Step 3 — Power BI Integration (Load & Connect)
 
 🎯 **Goal:** Bring cleaned tables into Power BI with reproducible, automatable flow.
 
@@ -238,7 +238,7 @@ Quarter = "Q" & FORMAT('Date'[Date], "Q")
 ```
 ---
 
-### 🔹Step 4 — Data Modeling & DAX (Relationships & Measures)
+## 🔹Step 4 — Data Modeling & DAX (Relationships & Measures)
 
 **🎯 Goal:** Model as a star schema and create robust KPIs.
 
@@ -271,7 +271,7 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 ```
 ---
 
-### 🔹Step 5 — Dashboard Development (Design & UX)  
+## 🔹Step 5 — Dashboard Development (Design & UX)  
 🎯 **Goal:** Create three professional and interactive pages with consistent design, layout, and color theme.
 
 **Page 1 — Country Performance**
@@ -291,7 +291,7 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 
 ---
 
-### 🔹Step 6 — Data Modeling & Relationships  
+## 🔹Step 6 — Data Modeling & Relationships  
 🎯 **Goal:** Establish logical relationships between datasets in Power BI  
 
 - Clean and transform data before creating relationships using **primary and foreign keys**  
@@ -300,7 +300,7 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 
 ---
 
-### 🔹Step 7 — DAX Calculations & KPIs  
+## 🔹Step 7 — DAX Calculations & KPIs  
 🎯 **Goal:** Create custom measures and KPIs for deeper insights  
 
 **Examples of DAX Measures:**  
@@ -313,7 +313,7 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 
 ---
 
-### 🔹Step 8 — Interactivity & Filters  
+## 🔹Step 8 — Interactivity & Filters  
 🎯 **Goal:** Make the dashboard interactive and user-friendly  
 
 - Add **Slicers** for Year, Country, Sport, and Gender  
@@ -323,7 +323,7 @@ Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 
 ---
 
-### 🔹Step 9 — Testing & Optimization  
+## 🔹Step 9 — Testing & Optimization  
 🎯 **Goal:** Ensure the dashboard is accurate, responsive, and high-performing  
 
 - Verify data refresh and calculations for correctness  
