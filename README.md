@@ -239,3 +239,122 @@ Female Gold % = DIVIDE(
 Medals YTD = TOTALYTD([Total Medals], 'Date'[Date])
 Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 ```
+---
+
+### 🔹Step 5 —  Dashboard Development (Design & UX)
+
+🎯 **Goal:** Create 3 professional pages with consistent design and clear storytelling.  
+
+---
+
+**📍 Page 1 — Country Performance**
+- 📊 **KPI Cards:** Athletes, Medals, Gold / Silver / Bronze  
+- 🗺 **Map:** Medal density by country  
+- 📈 **Bar Chart:** Top 10 countries by medals  
+- ⚧ **Gender Split**  
+
+---
+
+**📍 Page 2 — Athlete Analysis**
+- 📊 **Histogram:** Age distribution (peak 21–30)  
+- 🍩 **Donut Chart:** Gender distribution  
+- 📋 **Table:** Top athletes by medals  
+
+---
+
+**📍 Page 3 — Geographical Overview**
+- 🗺 **Map:** Highlighting USA dominance  
+- 🌍 **Regional medal comparisons**  
+- 🎛 **Slicers:** Year, Gender, Sport  
+
+---
+
+ **🎛 Interactivity**
+- Slicers, bookmarks, tooltips  
+- Drill-through for athlete-level detail  
+
+**🎨 Colors**
+- Gold 🥇, Silver 🥈, Bronze 🥉  
+- Neutral, consistent background  
+
+---
+
+### 🔹Step 6 —  Validation & QA
+
+✔ **Check medal totals** = match with official IOC data  
+✔ **Validate gender distribution** across events  
+✔ **Deduplicate** athlete-event rows  
+✔ **Peer review** → 5–10 random athlete records  
+
+---
+
+### 🔹Step 7 —  Performance Optimization
+
+⚡ **Best Practices**  
+- Use **Star Schema** for data modeling  
+- Remove **unused columns**  
+- Use **Import mode** for faster performance  
+- Replace calculated columns with **DAX measures**  
+- Configure **Incremental Refresh** if dataset grows  
+
+---
+
+### 🔹Step 8 —  Deployment & Sharing
+
+🚀 **Process**  
+- Publish `.pbix` → Power BI Service  
+- Configure **credentials & refresh schedule**  
+- Use **On-premises Gateway** if pulling local data  
+- Apply **Row-Level Security (RLS)** for restricted views  
+- ✅ Publish to Web → *only for public, non-sensitive data*  
+
+---
+
+### 🔹Step 9 —  Deliverables & Documentation
+
+📦 **Deliverables**  
+- `Olympic.pbix` → Final Power BI file  
+- `olympics_kaggle_api.py` → Python data acquisition script  
+- `data/athletes_clean.csv` → Cleaned dataset  
+- `reports/Olympic_Report.pdf` → Detailed analysis report  
+- `screenshots/` → Dashboard images  
+- `README.md` → Documentation (this file)  
+
+---
+
+## 📊 Business Problems Solved
+
+- 🥇 Identified **dominant countries & medal trends**  
+- ⚧ Measured **gender parity in Olympic achievements**  
+- 👶 Provided **athlete age-group insights**  
+- 🌍 Produced **geographic medal distribution**  
+
+---
+
+## 📌 Key Recommendations
+
+- Invest more in **women’s sports** 🏃‍♀️  
+- Focus on **21–30 years age group** athletes  
+- Use **veteran athletes strategically** in endurance events  
+- Benchmark against **USA training systems & funding models**  
+
+---
+
+## 🛠 Tech Stack
+
+- 🐍 **Python (Pandas, Kaggle API)** → Data acquisition & cleaning  
+- 📊 **Power BI** → Visualization & dashboards  
+- ➗ **DAX** → Measures & KPIs  
+- 📑 **Excel** → Validation checks  
+
+---
+
+## 🚀 Future Enhancements
+
+- 🔮 Predictive **medal forecasting** using ML models  
+- ⚡ Real-time **API refresh** into Power BI Service  
+- 📈 Expand dataset to include **historical Olympics (2000–2024)**  
+- 🎯 Role-based dashboards for **Coach / Committee / Sponsor**  
+
+---
+
