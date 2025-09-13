@@ -108,10 +108,10 @@ This project addresses these needs by integrating **Python-based Kaggle data ext
 
 ## ⚙️ Technical Process  
 
-### 🔹 Step 1: Data Import  
+### 🔹Step 1 — Data Import  
 - Dataset sourced from **Kaggle – Paris 2024 Olympic Summer Games**  
 - Data fetched using **Python Kaggle API script**  
-## Step 2 — Data Cleaning & Preprocessing (Python / Kaggle API)
+### 🔹Step 2 — Data Cleaning & Preprocessing (Python / Kaggle API)
 
 **🎯 Goal:** Convert raw CSV files downloaded from Kaggle into analysis-ready tables (consistent country names, age groups, flags for medals, cleaned data types).
 
@@ -168,4 +168,74 @@ print(total_athletes, total_rows)
 **💾 Export**
 ```
 df.to_csv(os.path.join(download_path,'athletes_clean.csv'), index=False)
+```
+---
+
+### 🔹Step 3 — Power BI Integration (Load & Connect)
+
+🎯 **Goal:** Bring cleaned tables into Power BI with reproducible, automatable flow.
+
+---
+
+### ⚙️ Options
+
+1️⃣ **Python Step in Power Query**  
+- Go to: `Home → Get Data → Other → Python Script`  
+- Paste your Python script (dataFrames will be returned as tables directly in Power BI).  
+
+```python
+# Example Python script inside Power BI (Power Query)
+import pandas as pd
+
+# Load cleaned CSVs from local path
+athletes = pd.read_csv("C:/Users/faies/Downloads/Power BI_Imp Summary/Olympic/Source/athletes_clean.csv")
+medals   = pd.read_csv("C:/Users/faies/Downloads/Power BI_Imp Summary/Olympic/Source/medals.csv")
+
+# Return DataFrames for Power BI
+athletes, medals
+```
+**2️⃣ Import Cleaned CSVs**
+Use: Home → Get Data → Text/CSV
+Point to athletes_clean.csv, medals.csv, etc.
+Power BI will automatically detect schema.
+
+**✅ Best Practice: Create a dedicated Date Table in Power Query**
+```
+Date = CALENDAR (DATE(2000,1,1), DATE(2030,12,31))
+Year = YEAR('Date'[Date])
+Month = FORMAT('Date'[Date], "MMM")
+Quarter = "Q" & FORMAT('Date'[Date], "Q")
+```
+---
+
+### 🔹Step 4 — Data Modeling & DAX (Relationships & Measures)
+
+**🎯 Goal:** Model as a star schema and create robust KPIs.
+
+**⭐ Schema**
+Fact Table: Medals/Participation (athlete-event rows)
+Dimensions: Athletes, Countries, Events, Teams, Date
+```
+Fact[athlete_id] → Athletes[athlete_id]  
+Fact[country] → Countries[country]  
+```
+**📊 DAX Measures**
+```
+Total Medals = COUNTROWS('Medals')
+Total Golds  = CALCULATE([Total Medals],'Medals'[Medal] = "Gold")
+Total Silvers= CALCULATE([Total Medals],'Medals'[Medal] = "Silver")
+Total Bronzes= CALCULATE([Total Medals],'Medals'[Medal] = "Bronze")
+
+Male Medals  = CALCULATE([Total Medals], 'Athletes'[Gender] = "M")
+Female Medals= CALCULATE([Total Medals], 'Athletes'[Gender] = "F")
+
+Female Gold % = DIVIDE(
+    CALCULATE([Total Golds], 'Athletes'[Gender] = "F"),
+    [Total Golds], 0
+)
+```
+**📅 Date Intelligence**
+```
+Medals YTD = TOTALYTD([Total Medals], 'Date'[Date])
+Medals PrevYear = CALCULATE([Total Medals], SAMEPERIODLASTYEAR('Date'[Date]))
 ```
