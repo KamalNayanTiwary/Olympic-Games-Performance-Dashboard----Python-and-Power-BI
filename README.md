@@ -155,5 +155,14 @@ df['Age_Group'] = pd.cut(df['Age'], bins=bins, labels=labels)
 # Boolean flags
 df['Has_Medal'] = df['medal'].notnull()
 ```
+**🔍 Validation**
+```
+# Check for nulls
+print(df[['athlete_id','country','age','gender','medal']].isnull().sum())
 
+# Count unique athletes vs rows*
+total_athletes = df['athlete_id'].nunique()
+total_rows = len(df)
+print(total_athletes, total_rows)
+```
 
