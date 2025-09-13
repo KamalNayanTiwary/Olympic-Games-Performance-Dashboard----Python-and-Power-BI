@@ -139,5 +139,21 @@ kaggle.api.dataset_download_files(dataset, path=download_path, unzip=True)
 csv_files = ['athletes.csv','events.csv','medals.csv','teams.csv','venues.csv']
 dataFrames = {f.split('.')[0]: pd.read_csv(os.path.join(download_path,f)) for f in csv_files}
 ```
+**🧹 Cleaning steps**
+```# Trim whitespace, uniform case, remove duplicates
+df['country'] = df['country'].str.strip()
+df = df.drop_duplicates(subset=['athlete_id','event','year'])
+
+# Convert datatypes
+df['age'] = df['age'].astype(int)
+
+# Create Age Groups
+bins = [0,20,25,30,35,40,45,50,100]
+labels = ['≤20','21-25','26-30','31-35','36-40','41-45','46-50','51+']
+df['Age_Group'] = pd.cut(df['Age'], bins=bins, labels=labels)
+
+# Boolean flags
+df['Has_Medal'] = df['medal'].notnull()
+```
 
 
