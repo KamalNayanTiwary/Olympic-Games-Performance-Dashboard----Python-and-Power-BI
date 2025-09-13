@@ -119,8 +119,9 @@ This project addresses these needs by integrating **Python-based Kaggle data ext
 Install required packages:
 ```bash
 pip install pandas numpy kaggle
-
-import kaggle, pandas as pd, os
+```
+###📥 Download & unzip dataset
+```import kaggle, pandas as pd, os
 
 os.environ['KAGGLE_CONFIG_DIR'] = 'C:/Users/faies/.kaggle'
 dataset = 'ploterim/panic-2024-olympic-summer-games'
