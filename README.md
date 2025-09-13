@@ -111,136 +111,32 @@ This project addresses these needs by integrating **Python-based Kaggle data ext
 ### 🔹 Step 1: Data Import  
 - Dataset sourced from **Kaggle – Paris 2024 Olympic Summer Games**  
 - Data fetched using **Python Kaggle API script**  
+## Step 2 — Data Cleaning & Preprocessing (Python / Kaggle API)
 
-### 🔹 Step 2: Python Script (Data Extraction & Cleaning)  
+**🎯 Goal:** Convert raw CSV files downloaded from Kaggle into analysis-ready tables (consistent country names, age groups, flags for medals, cleaned data types).
 
-```python
-import kaggle
-import pandas as pd
-import os
+### ⚙️ Environment / Setup
+Install required packages:
+```bash
+pip install pandas numpy kaggle
+
+import kaggle, pandas as pd, os
 
 os.environ['KAGGLE_CONFIG_DIR'] = 'C:/Users/faies/.kaggle'
 dataset = 'ploterim/panic-2024-olympic-summer-games'
-download_path = 'C:/Users/faies/Downloads/Olympic/Source'
+download_path = 'C:/Users/faies/Downloads/Power BI_Imp Summary/Olympic/Source'
 
-# Clear old files
-for file in os.listdir(download_path):
-    file_path = os.path.join(download_path, file)
-    if os.path.isfile(file_path):
-        os.unlink(file_path)
+# Clear older files
+for f in os.listdir(download_path):
+    p = os.path.join(download_path, f)
+    if os.path.isfile(p): os.unlink(p)
 
-# Download fresh dataset
+# Download & unzip from Kaggle
 kaggle.api.dataset_download_files(dataset, path=download_path, unzip=True)
 
+# Load CSVs
 csv_files = ['athletes.csv','events.csv','medals.csv','teams.csv','venues.csv']
-dataFrames = {}
-for file in csv_files:
-    df = pd.read_csv(os.path.join(download_path, file))
-    dataFrames[file.split('.')[0]] = df
-➡️ Ensures latest Kaggle data is always synced with Power BI
+dataFrames = {f.split('.')[0]: pd.read_csv(os.path.join(download_path,f)) for f in csv_files}
 ```
 
-🔹 Step 3: Power BI Integration
 
-Data loaded into Power BI Desktop
-
-Relationships modeled across Athletes, Events, Medals, Teams
-
-KPIs & calculated columns created with DAX
-
-🔹 Step 4: Dashboard Development
-
-Page 1 → Country Performance
-
-Page 2 → Athlete Analysis
-
-Page 3 → Geographical Overview
-
-Added filters & slicers for interactivity
-
-🔹 Step 5: Validation
-
-Cross-checked medal counts with official Olympic statistics
-
-Ensured data accuracy & consistency
-
-🚨 Business Problems Solved
-
-Identified dominant countries in Olympic performance
-
-Measured gender parity in sports achievements
-
-Analyzed age distribution trends of medal winners
-
-Provided regional insights for national sports committees
-
-🔎 Insights & Recommendations
-📌 Sports Development Strategy
-
-Invest more in women’s sports programs (female athletes showing strong results)
-
-Focus on youth training academies → athletes peak in their 20s
-
-Utilize veteran experience in technical/endurance sports
-
-📌 Policy & Investment
-
-Benchmark against USA’s sports programs & investments
-
-Strengthen funding for underrepresented regions
-
-Promote grassroots development in Asia & Africa
-
-📌 Talent Scouting
-
-Scout talent in 21–30 years bracket
-
-Identify countries with low medal count → potential for growth with proper support
-
-📄 Olympic Games Report
-
-The Olympic Games are more than sports — they represent global unity, competition, and excellence. However, with thousands of athletes and hundreds of events, data analysis is crucial to uncover insights.
-
-This Olympic Dashboard was built to:
-
-Track global medal distribution
-
-Monitor country-level performance
-
-Evaluate gender balance in medal wins
-
-Analyze athlete demographics & age trends
-
-📊 By consolidating these insights into interactive dashboards, Olympic committees and analysts can make data-driven strategic decisions.
-
-🛠️ Tech Stack
-
-Python (Pandas, Kaggle API) – Data import & preparation
-
-Power BI Desktop – Visualization & dashboards
-
-DAX – Custom KPIs & calculations
-
-Excel – Validation checks
-
-🚀 Future Improvements
-
-Add predictive analysis → Which country may dominate next Olympics
-
-Build real-time Power BI Service refresh with API integration
-
-Incorporate athlete-level performance stats (records, personal bests)
-
-Expand dataset → Include historical Olympic Games (2000–2024)
-
-👨‍💻 Author & Contact
-
-Kamal Nayan Tiwary
-Data Analyst | Power BI & Python Enthusiast
-
-📧 kamalnayantiwary73@gmail.com
-
-🔗 LinkedIn
-
-
----
