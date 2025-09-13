@@ -31,8 +31,8 @@ The project provides **actionable insights** to sports analysts, committees, and
 ## 📊 Dashboard Overview  
 I designed **3 Dashboards** for a complete analysis: 
 
-### 1️⃣ COUNTRY PERFORMANCE Dashboard – **Medals & Global Comparison**  
-![COUNTRY Dashboard](screenshots/Screenshot1.png)  
+### 1️⃣ OVERVIEW PERFORMANCE Dashboard – **Medals & Global Comparison**  
+![COUNTRY Dashboard](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/Overview%20Dashboard.png)  
 
 The **Country Performance Dashboard** acts as the **executive snapshot** of the Olympic medal distribution across countries. It is designed for analysts, journalists, and national Olympic committees to understand **which nations lead the medal tally**.  
 
@@ -56,7 +56,7 @@ The **Country Performance Dashboard** acts as the **executive snapshot** of the 
 ---
 
 ### 2️⃣ ATHLETE ANALYSIS Dashboard – **Demographics & Age Trends**  
-![ATHLETE Dashboard](screenshots/Screenshot2.png)  
+![ATHLETE Dashboard](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/Athletes%20Dashboard.png)  
 
 The **Athlete Dashboard** focuses on the **demographics of athletes** — gender, age, and country participation. It is designed to help sports scientists, coaches, and committees **understand athlete characteristics**.  
 
@@ -78,8 +78,8 @@ The **Athlete Dashboard** focuses on the **demographics of athletes** — gender
 
 ---
 
-### 3️⃣ GEOGRAPHICAL Dashboard – **Global Medal Distribution**  
-![GEO Dashboard](screenshots/Screenshot3.png)  
+### 3️⃣ COUNTRY Dashboard – **Global Medal Distribution**  
+![COUNTRY Dashboard](https://github.com/KamalNayanTiwary/Olympic-Games-Performance-Dashboard----Python-and-Power-BI/blob/main/Country%20Dashboard.png)  
 
 The **Geographical Dashboard** zooms into the **spatial distribution of Olympic medals**. It helps federations and policymakers analyze **regional strengths and weaknesses**.  
 
